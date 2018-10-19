@@ -31,7 +31,7 @@
     <script type="text/paperscript" canvas="canvas">
     // The amount of symbol we want to place;
     var count = 150;
-
+    
     project.currentStyle = {
         fillColor: 'white'
     };
@@ -98,7 +98,7 @@
 </head>
 <body>
     <div class="split left"> 
-          <canvas id="canvas" resize hidpi="off" style="background:#43425D"></canvas>
+          <canvas id="canvas" resize hidpi="off" style="background:#43425D; width:100%;height:100%"></canvas>
     </div>
 <div class="split right">
     <div class="centered" style="width:400px;height: 400px">
