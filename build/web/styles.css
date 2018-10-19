@@ -1,0 +1,237 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Sep, 2018, 6:37:14 PM
+    Author     : Harsh Jain
+*/
+
+@charset "ISO-8859-1";
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  /*z-index: 1;*/
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /*padding-top: 20px;*/
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #43425D;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: white;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+head{
+    display:block;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=password]:focus {
+    border: 3px solid #555;
+}
+input[type=submit] {
+	background-color: #005580;
+    border: none;
+    color: white;
+    display: block;
+    padding: 13px 40px;
+    text-decoration: none;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.divide{
+    height: 100%;
+  width: 20%;
+  position: absolute;
+  /*z-index: 1;*/
+  top: 0;
+  overflow: auto;
+  /*overflow-x: hidden;*/
+  overflow-y: hidden;
+  /*padding-top: 20px;*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    /*margin-top: 20px;*/
+    background-color: #43425D;
+    position: fixed;
+    /*color: white;*/
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: white;
+    height: 40px;
+    padding-top: 16px;
+    /*padding-bottom: 14px;*/
+    
+    /*padding: 8px 16px;*/
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: black;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+.facutly_info_right{
+    background-color: #cccccc;
+    right: 0;
+    display: block;
+}
+img.center{
+/*    border-radius: 50%;*/
+align-items: center;
+     display: block;
+    max-width:180px;
+    max-height:180px;
+    width: auto;
+    margin-top:15px;
+    /*display: block;*/
+margin-left: auto;
+margin-right: auto;
+    height: auto;
+}
+
+p.facutly_info{
+    color :#005580;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.center_display{
+     position: fixed;
+  top: 50%;
+  left: 60%;
+  overflow: auto;
+  font-family: cursive;
+  display: block;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: DodgerBlue;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  /*user-select: none;*/
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,11 @@
+{
+    "elements": {},
+    "attributes": {
+        "canvas": {
+            "context": "script"
+        },
+        "resize": {
+            "context": "canvas"
+        }
+    }
+}
