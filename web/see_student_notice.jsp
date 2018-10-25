@@ -33,6 +33,8 @@
   <li><a href="see_student_notice.jsp" class="active">Check Notices</a></li>
   <li><a href="student_marks.jsp">Check Marks</a></li>
   <li><a href="course_registration.jsp">Course Registration</a></li>
+  
+                <li><a href="chat_student.jsp">Chat Room</a></li>
 
   <li><a href="index.jsp">Sign Out</a>
 </ul> 

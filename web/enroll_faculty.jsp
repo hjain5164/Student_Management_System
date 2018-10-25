@@ -40,6 +40,8 @@
   
   <li><a href="course_register.jsp">Course Registration</a></li>
   <li><a href="course_details.jsp">Course Details</a></li>
+    <!--<li><a href="chat_faculty.jsp">Chat Room</a></li>-->
+
   <li><a href="index.jsp">Sign Out</a>
 </ul> 
         </div>
