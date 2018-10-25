@@ -27,3 +27,7 @@ The application has three modules :
 
 #### - Student Notice Page
 ![](https://github.com/hjain5164/Screenshots/blob/master/Student-Management-System/third.gif)
+
+
+#### - Student Marks Page
+![](https://github.com/hjain5164/Screenshots/blob/master/Student-Management-System/fourth.gif)
