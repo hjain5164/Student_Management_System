@@ -24,3 +24,6 @@ The application has three modules :
 #### - Student Attendance Page
 ![](https://github.com/hjain5164/Screenshots/blob/master/Student-Management-System/second.gif)
 
+
+#### - Student Notice Page
+![](https://github.com/hjain5164/Screenshots/blob/master/Student-Management-System/second.gif)
