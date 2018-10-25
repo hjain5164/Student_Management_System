@@ -1,13 +1,12 @@
 <%-- 
-    Document   : student_home
-    Created on : 17 Sep, 2018, 7:54:45 PM
+    Document   : new_student_message
+    Created on : 24 Oct, 2018, 8:26:31 PM
     Author     : Harsh Jain
 --%>
 
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.Connection"%>
 <%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -16,9 +15,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title> Student Home </title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="js/jQuery-plugin-progressbar.css">
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="js/jQuery-plugin-progressbar.js"></script>
+ 
         <script>
             function update_details()
             {
@@ -37,12 +34,12 @@
                  margin-top: 20px; margin-bottom: 25px;">ABC Insitute</div>
             <hr> 
             <ul>
-                 <li><a href="student_home.jsp" class="active">Home</a></li>
+                 <li><a href="student_home.jsp">Home</a></li>
   <li><a href="student_attendance.jsp">Check Attendance</a></li>
   <li><a href="see_student_notice.jsp">Check Notices</a></li>
   <li><a href="student_marks.jsp">Check Marks</a></li>
   <li><a href="course_registration.jsp">Course Registration</a></li>
-  <li><a href="chat_student.jsp">Chat Room</a></li>
+  <li><a href="chat_student.jsp" class="active">Chat Room</a></li>
   <li><a href="index.jsp">Sign Out</a>
 </ul> 
         </div>
@@ -109,63 +106,24 @@
             </form>
         </p>
         </div>
-            <%
-             qr="select attended,course_name,course_id,total from courses where username=?";
-            ps=con.prepareStatement(qr);
-            ps.setString(1,username);
-            rs=ps.executeQuery();
-//           out.println(username);
-            while(rs.next())
-            {
-                int attended = rs.getInt("attended");
-                String course_name = rs.getString("course_name");
-                String course_id = rs.getString("course_id");
-//                out.println("Pass");
-                int total = rs.getInt("total");
-                p = p + attended;
-                t = t + total;
-                
-            
-            }
-            
-            %>
         <div class="divide" style="left: 30%; width: 40%; height: 85%; top: 8%; right: 25%; overflow-x: hidden; overflow-y: auto">
-        <%
-        try{
-        if(p*100/t<75)
-        {
-        %>
-                <marquee><p style="font-size: 20px; color: #ff3300;"><strong>Not Eligible to give your examinations!!!!</strong></p></marquee>
-
-        <div class="progress-bar position" data-percent="<%=p*100/t%>" data-color="#ccc,red" style="left: 30%">
-        </div>
-	<% 
-                }
-        else
-        {
-        %>    
-        <marquee><p style="font-size: 20px; color: #00cc00"><strong>Eligible to give Examinations!!!</strong></p></marquee>
-            <div class="progress-bar position" data-percent="<%=p*100/t%>" data-duration="1000" data-color="#ccc,green" style="left: 30%">
-            </div>
             
-	<%
-            }
-        %>
-            <script>
-		$(".progress-bar").loading();
-		$('input').on('click', function () {
-			 $(".progress-bar").loading();
-		});
-	</script>
-    
-        <%
-        } catch(ArithmeticException e)
-            {
-%>                <marquee><p style="font-size: 20px; color: #00cc00"><strong>Please Register for a Course!!!</strong></p></marquee>
-            <div class="progress-bar position" data-percent="<%=0%>" data-duration="1000" data-color="#ccc,green" style="left: 30%">
-
-  <%              }
-        %>
+            <%
+                String faculty_name = (String) request.getParameter("faculty_name");
+                if(faculty_name == null)
+                    faculty_name = (String) request.getParameter("fac_name");
+            %>
+            <form action="s_to_f">
+                <input type="hidden" value="<%=faculty_name%>" name="faculty_name">
+                <input type="hidden" value="<%=username%>" name="student_name">
+                <textarea placeholder="Enter the message" spellcheck="true" name="message" style="width: 400px; height: 300px; margin-left: 55px"></textarea>
+            
+            <input type="submit" value="Send Message">
+            </form>
+                
+                <br><br>
+                
+                
         </div>
     </body>
 </html>

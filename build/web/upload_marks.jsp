@@ -53,8 +53,8 @@
                 <li><a href="faculty_attendance.jsp" class="active">Upload Attendance</a></li>
                 <li><a href="faculty_notice.jsp">Upload Notices</a></li>
                 <li><a href="faculty_marks.jsp">Upload Marks</a></li>
-                <li><a href="faculty_chat.jsp">Chat Room</a></li>
-                <li><a href="faculty_settings.jsp">Settings</a></li>
+                <li><a href="chat_faculty.jsp">Chat Room</a></li>
+                <!--<li><a href="faculty_settings.jsp">Settings</a></li>-->
                 <li><a href="index.jsp">Sign Out</a>
 
             </ul> 

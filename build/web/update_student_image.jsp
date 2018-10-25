@@ -41,7 +41,7 @@
   <li><a href="see_student_notice.jsp">Check Notices</a></li>
   <li><a href="student_marks.jsp">Check Marks</a></li>
   <li><a href="course_registration.jsp">Course Registration</a></li>
-  <!--<li><a href="student_chat.jsp">Chat Room</a></li>-->
+  <li><a href="chat_student.jsp">Chat Room</a></li>
   
   <!--<li><a href="faculty_settings.jsp">Settings</a></li>-->
   <li><a href="index.jsp">Sign Out</a>

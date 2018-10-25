@@ -3,11 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Harsh%20Jain/Documents/NetBeansProjects/Student%20Management%20System/web/enroll_faculty.jsp</file>
-            <file>file:/C:/Users/Harsh%20Jain/Documents/NetBeansProjects/Student%20Management%20System/src/java/enrollFaculty.java</file>
-            <file>file:/C:/Users/Harsh%20Jain/Documents/NetBeansProjects/Student%20Management%20System/web/admin_home.jsp</file>
-            <file>file:/C:/Users/Harsh%20Jain/Documents/NetBeansProjects/Student%20Management%20System/src/java/courseRegister.java</file>
-            <file>file:/C:/Users/Harsh%20Jain/Documents/NetBeansProjects/Student%20Management%20System/web/course_register.jsp</file>
+            <file>file:/C:/Users/Harsh%20Jain/Documents/NetBeansProjects/Student%20Management%20System/src/java/s_to_f.java</file>
+            <file>file:/C:/Users/Harsh%20Jain/Documents/NetBeansProjects/Student%20Management%20System/web/chat_faculty.jsp</file>
+            <file>file:/C:/Users/Harsh%20Jain/Documents/NetBeansProjects/Student%20Management%20System/src/java/f_to_s.java</file>
         </group>
     </open-files>
 </project-private>
